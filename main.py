@@ -37,8 +37,12 @@ def main(env):
     with open(source_file, mode='r', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            body = {
-                "carrier": [row["carrier"]],
+            body={
+                "additionalValues": [],
+                "carrier": [
+                    row["carrier"]
+                ],
+                "report": "networkComparison",
                 "homeValue": row["network_name"],
                 "reportType": "network",
                 "totalWeightComparisonValue": {
@@ -47,9 +51,26 @@ def main(env):
                     "PFS": "266",
                     "DrugB": "148"
                 },
-                "upperLimit": "1000",
-                "lowerLimit": "70"
+                "percentageLimitMap": {
+                    "IPPS": {
+                        "lowerLimit": "70",
+                        "upperLimit": "1000"
+                    },
+                    "OPPS": {
+                        "lowerLimit": "50",
+                        "upperLimit": "1500"
+                    },
+                    "PFS": {
+                        "lowerLimit": "70",
+                        "upperLimit": "1000"
+                    },
+                    "DrugB": {
+                        "lowerLimit": "70",
+                        "upperLimit": "1000"
+                    }
+                }
             }
+            
             response = requests.post(api_url, headers=header, json=body)
             output_dict = {"carrier": row["carrier"], "network_name": row["network_name"]}
             if response.status_code == 200:
@@ -82,7 +103,7 @@ def main(env):
 
     print("Written into", output_file)
 
-    recipient_email = "rsedhai@deerhold.com"
+    recipient_email = ["gkc@deerhold.com","rsedhai@deerhold.com"]
     subject = "Latest Network Availability Response csv"
     body = "Please find the latest response from Network Availability"
 
@@ -98,7 +119,7 @@ def sendEmail(recipient_email, subject, body, output_file, config):
 
     msg = MIMEMultipart()
     msg['From'] = senderEmail
-    msg['To'] = recipient_email
+    msg['To'] = ", ".join(recipient_email)
     msg['Subject'] = subject
 
     msg.attach(MIMEText(body, 'plain'))
