@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Local secrets/config
+config.json
+
+#response_log
+backend_api_response_log.txt
+
+#output files
+uat_network_report.xlsx
+uat_carrier_report.xlsx
+dev_response.xlsx
+dev_carrier_report.xlsx
+
+# OS files
+.DS_Store
