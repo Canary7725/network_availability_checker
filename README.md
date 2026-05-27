@@ -1,62 +1,60 @@
 # Network Availability Checker
 
-This project validates API response availability and generates Excel reports for:
+This project validates API response availability and generates Excel reports for configured report types:
 
 - Network report
 - Carrier report
+- Reporting Entity report
+- Product report
 
-The current entrypoint is `main.py`, which orchestrates selected reports from config and sends one email with all generated files.
+The entrypoint is `main.py`, and recommended delivery runners are:
+
+- `run.sh` for macOS/Linux
+- `run.bat` for Windows
+
+## Python Compatibility
+
+- Supported: **Python 3.9 to 3.13**
+- Recommended: latest stable Python 3.x
+
+Warning:
+- Python versions below 3.9 are not supported.
+- Always run inside a virtual environment (`venv`) to avoid package conflicts.
 
 ## Project Structure
 
-- `main.py`: orchestrator (loads config, runs selected reports, sends email)
-- `network_report.py`: network report generation logic
-- `carrier_report.py`: carrier report generation logic
-- `report_utils.py`: shared helpers (config/file path helpers, normalization, retry logic, email sender)
-- `backend.py`: legacy reference implementation (kept intentionally)
+- `main.py`: orchestrator (loads config, runs selected reports)
+- `network_report.py`: network report generation
+- `carrier_report.py`: carrier report generation
+- `reporting_entity_report.py`: reporting entity report generation
+- `product_report.py`: product report generation
+- `report_utils.py`: shared helpers (normalization, retries, paths, email helper)
+- `config.json`: runtime configuration
+- `run.sh`: one-command runner for macOS/Linux
+- `run.bat`: one-command runner for Windows
 
-## Prerequisites
+## Source Input File
 
-- Python 3.9+
-- A virtual environment (recommended)
+The source file should be in CSV format and is expected to exist in project folder.
 
-## Installation
+Default file: `network_list.csv`
 
-1. Create a virtual environment:
-
-```bash
-python3 -m venv venv
-```
-
-2. Activate it:
-
-```bash
-source venv/bin/activate
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Source Input File Requirement
-
-The source input file should ideally be a `.csv` file with **two columns**:
+Expected headers:
 
 - `carrier`
+- `reporting_entity_name`
+- `product`
 - `network_name`
 
-Example:
+Sample:
 
 ```csv
-carrier,network_name
-Aetna,Aetna Choice POS II
-Alliance,Alliance Comprehensive
-Cigna,Cigna Localplus
+carrier,reporting_entity_name,product,network_name
+Cigna,Cigna Health Life Insurance Company,OAP,Cigna National OAP
+BCBS,Blue Cross Blue Shield,BCBS-HMO,BCBS National
 ```
 
-Set this file path in config under:
+Set path in:
 
 - `file.source_file_path`
 
@@ -64,21 +62,23 @@ Set this file path in config under:
 
 Update `config.json` before running.
 
-### Required sections
+Required sections:
 
-- `reports_to_generate`: list of reports to run
-- `file.source_file_path`: source CSV file path
+- `reports_to_generate`: list of report modules to run
+- `file.source_file_path`
 - `dev_secrets` and `uat_secrets`:
   - `url`
   - `client_key`
-  - `output_file_path` (network report output)
-  - `carrier_output_file_path` (carrier report output)
+  - `network_output_file_path`
+  - `carrier_output_file_path`
+  - `reporting_entity_output_file_path`
+  - `product_output_file_path`
 - `email`:
   - `sender_email`
   - `password`
-  - `recipients` (list)
+  - `recipients`
 
-### Optional/runtime sections
+Optional runtime sections:
 
 - `api.timeout_seconds`
 - `api.max_retries`
@@ -87,35 +87,56 @@ Update `config.json` before running.
 - `logging.level`
 - `report.sheet_names`
 
-## Run Instructions
+## How To Run
 
-### Run against UAT
+### macOS / Linux
 
-```bash
-python3 main.py --uat
-```
-
-### Run against DEV
+From project root:
 
 ```bash
-python3 main.py --dev
+chmod +x run.sh
+./run.sh
 ```
 
-What happens on each run:
+Environment override:
 
-1. Config is loaded from `config.json`
-2. Logging is initialized (`filemode="w"`, so previous log file is overwritten)
-3. Reports listed in `reports_to_generate` are generated
-4. Existing output files are overwritten
-5. One email is sent with all generated report attachments
+```bash
+./run.sh uat
+./run.sh dev
+```
 
-## Outputs
+### Windows
 
-By default (based on current config):
+From project root in Command Prompt:
 
-- Network report workbook -> from `output_file_path`
-- Carrier report workbook -> from `carrier_output_file_path`
+```bat
+run.bat
+```
+
+Environment override:
+
+```bat
+run.bat uat
+run.bat dev
+```
+
+## What Runner Scripts Do
+
+Both `run.sh` and `run.bat` automatically:
+
+1. Validate required files (`config.json`, `network_list.csv`, `requirements.txt`)
+2. Create `venv` if missing
+3. Activate virtual environment
+4. Install/update dependencies from `requirements.txt`
+5. Run `main.py` with selected environment (`uat` default)
+
+## Output and Logging Behavior
+
+- Logs overwrite each run (`filemode="w"` in logging setup)
+- Report files overwrite each run (Excel writer uses write mode)
+- Output file names are controlled in `config.json` per environment
 
 ## Notes
 
-- If SMTP/network is unavailable, report generation still completes locally; email send may fail.
+- If API/SMTP connectivity is unavailable, run can fail at request/email stages.
+- Keep `config.json` and credentials secure and out of public repositories.

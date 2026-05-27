@@ -1,19 +1,329 @@
-carrier,network_name
-Aetna,Aetna Choice POS II
-Aetna,Aetna Open Access Aetna Select
-Aetna,Aetna Signature Administrators PPO
-Alliance,Alliance Comprehensive
-AmeriHealth,AmeriHealth EPO
-AmeriHealth,AmeriHealth NJ HMO
-AmeriHealth,AmeriHealth PA HMO
-AmericasPPO,America's PPO - PPO
-AultCare,AultCare FrontPath
-AultCare,AultCare Ohio Health Choice
-AultCare,AultCare Quality Care Partners
-BCBS,Anthem CA California Care
-BCBS,Anthem CA Pathway
-BCBS,Anthem CA Vivity HMO
-BCBS,Anthem CA Pathway
-BCBS,Anthem CA Prudent Buyer PPO
-BCBS,Anthem CA Select PPO
-BCBS,Anthem CO Mountain Enhanced HMO
+carrier,reporting_entity_name,product,network_name
+BCBS,Anthem CA,HMO,Anthem CA California Care
+BCBS,Anthem CA,HMO,Anthem CA Pathway
+BCBS,Anthem CA,HMO,Anthem CA Vivity HMO
+BCBS,Anthem CA,PPO,Anthem CA Pathway
+BCBS,Anthem CA,PPO,Anthem CA Prudent Buyer PPO
+BCBS,Anthem CA,PPO,Anthem CA Select PPO
+BCBS,Anthem CO,HMO,Anthem CO Mountain Enhanced HMO
+BCBS,Anthem CO,PPO,Anthem CO Pathway PPO
+BCBS,Anthem CT,PPO,Anthem CT Century Preferred
+BCBS,Anthem CT,PPO,Anthem CT Pathway
+BCBS,Anthem GA,EPO,Anthem GA Blue Connections
+BCBS,Anthem GA,POS,Anthem GA Blue Connections
+BCBS,Anthem GA,PPO,Anthem GA Blue Choice PPO
+BCBS,Anthem IN,PPO,Anthem IN Blue Access PPO
+BCBS,Anthem KY,HMO,Anthem KY Pathway
+BCBS,Anthem KY,PPO,Anthem KY Blue Access PPO
+BCBS,Anthem KY,PPO,Anthem KY Pathway
+BCBS,Anthem ME,HMO,Anthem ME HMO Tiered Options
+BCBS,Anthem ME,PPO,Anthem ME Blue Choice PPO
+BCBS,Anthem MO,PPO,Anthem MO Blue Access Choice
+BCBS,Anthem MO,PPO,Anthem MO Blue Preferred Plus
+BCBS,Anthem NH,HMO,Anthem NH Access Blue New England
+BCBS,Anthem NH,HMO,Anthem NH Pathway X
+BCBS,Anthem NH,PPO,Anthem NH Preferred Blue
+BCBS,Anthem NV,HMO,Anthem NV Guided Access HMO
+BCBS,Anthem NV,PPO,Anthem NV Choice PPO
+BCBS,Anthem NY,EPO,Anthem NY Blue Access
+BCBS,Anthem NY,EPO,Anthem NY PPO/EPO
+BCBS,Anthem NY,HMO,Anthem NY Blue Access
+BCBS,Anthem NY,PPO,Anthem NY PPO/EPO
+BCBS,Anthem OH,PPO,Anthem OH Blue Access PPO
+BCBS,Anthem VA,EPO,Anthem VA Keycare
+BCBS,Anthem WI,HMO,Anthem WI Blue Priority
+BCBS,Anthem WI,PPO,Anthem WI Blue Preferred
+BCBS,Arkansas Blue Cross and Blue Shield,HMO,BCBS AR Health Advantage
+BCBS,Blue Card,EPO,Blue Card EPO and HPN
+BCBS,Blue Card,HMO,Blue Card Managed Care and HMO
+BCBS,Blue Card,POS,Blue Card Managed Care and HMO
+BCBS,Blue Card,PPO,Blue Card PPO
+BCBS,Blue Card,PPO,Blue Card Traditional and Participating
+BCBS,Blue Cross Blue Shield of Arizona,PPO,BCBS AZ PPO
+BCBS,Blue Cross Blue Shield of Michigan,HMO,BCBS MI Local HMO
+BCBS,Blue Cross Blue Shield of Michigan,PPO,BCBS MI Local PPO
+BCBS,Blue Cross Blue Shield of North Dakota,HMO,BCBS ND DakotaBlue Altru
+BCBS,Blue Cross Blue Shield of North Dakota,HMO,BCBS ND DakotaBlue Trinity
+BCBS,Blue Cross Blue Shield of North Dakota,HMO,BCBS ND Sanford Health Alliance
+BCBS,Blue Cross Blue Shield of Puerto Rico,PPO,BCBS PR PPO
+BCBS,Blue Cross Blue Shield of Tennessee,Other,BCBS TN Network P
+BCBS,Blue Cross Blue Shield of Tennessee,Other,BCBS TN Network S
+BCBS,Blue Cross Blue Shield of Wyoming,Other,BCBS WY BlueChoice
+BCBS,Blue Cross and Blue Shield of Hawaii,HMO,BCBS HI HMO
+BCBS,Blue Cross and Blue Shield of Hawaii,PPO,BCBS HI PPO
+BCBS,Blue Cross and Blue Shield of Illinois,HMO,BCBS IL Blue Precision HMO
+BCBS,Blue Cross and Blue Shield of Illinois,PPO,BCBS IL Blue Care Direct
+BCBS,Blue Cross and Blue Shield of Illinois,PPO,BCBS IL Blue Choice Preferred PPO
+BCBS,Blue Cross and Blue Shield of Illinois,PPO,BCBS IL Blue Options PPO
+BCBS,Blue Cross and Blue Shield of Illinois,PPO,BCBS IL Participating Provider Options PPO
+BCBS,Blue Cross and Blue Shield of Illinois,PPO,BCBS IL Traditional Blue
+BCBS,Blue Cross and Blue Shield of Kansas City,EPO,BCBS KS City Blue Select Plus
+BCBS,Blue Cross and Blue Shield of Kansas City,EPO,BCBS KS City High Performance
+BCBS,Blue Cross and Blue Shield of Kansas City,EPO,BCBS KS City Preferred Care Blue
+BCBS,Blue Cross and Blue Shield of Kansas City,HMO,BCBS KS City Blue Care
+BCBS,Blue Cross and Blue Shield of Kansas City,PPO,BCBS KS City Blue Access
+BCBS,Blue Cross and Blue Shield of Kansas City,PPO,BCBS KS City Preferred Care Blue
+BCBS,Blue Cross and Blue Shield of Louisiana,HMO,BCBS LA HMOLA Blue Connect
+BCBS,Blue Cross and Blue Shield of Louisiana,HMO,BCBS LA HMOLA Community Blue
+BCBS,Blue Cross and Blue Shield of Louisiana,HMO,BCBS LA HMOLA Precision Blue
+BCBS,Blue Cross and Blue Shield of Louisiana,HMO,BCBS LA HMOLA Signature Blue
+BCBS,Blue Cross and Blue Shield of Louisiana,POS,BCBS LA HMOLA Blue POS
+BCBS,Blue Cross and Blue Shield of Louisiana,PPO,BCBS LA Preferred Care
+BCBS,Blue Cross and Blue Shield of Massachusetts,EPO,BCBS MA Blue Care Elect
+BCBS,Blue Cross and Blue Shield of Massachusetts,EPO,BCBS MA Blue High Performance
+BCBS,Blue Cross and Blue Shield of Massachusetts,HMO,BCBS MA HMO Blue
+BCBS,Blue Cross and Blue Shield of Massachusetts,HMO,BCBS MA New England Managed Care
+BCBS,Blue Cross and Blue Shield of Massachusetts,PPO,BCBS MA PAR Providers
+BCBS,Blue Cross and Blue Shield of Minnesota,PPO,BCBS MN Aware
+BCBS,Blue Cross and Blue Shield of Minnesota,PPO,BCBS MN High Value PPO
+BCBS,Blue Cross and Blue Shield of Montana,POS,BCBS MT Blue Focus POS
+BCBS,Blue Cross and Blue Shield of Montana,PPO,BCBS MT Blue Options
+BCBS,Blue Cross and Blue Shield of Montana,PPO,BCBS MT Blue Preferred PPO
+BCBS,Blue Cross and Blue Shield of Nebraska,Other,BCBS NE Blue
+BCBS,Blue Cross and Blue Shield of Nebraska,Other,BCBS NE Blueprint Health
+BCBS,Blue Cross and Blue Shield of Nebraska,Other,BCBS NE Premier Select Blue Choice
+BCBS,Blue Cross and Blue Shield of New Mexico,EPO,BCBS NM Blue Preferred EPO
+BCBS,Blue Cross and Blue Shield of New Mexico,HMO,BCBS NM Blue Advantage HMO
+BCBS,Blue Cross and Blue Shield of New Mexico,HMO,BCBS NM Blue Community HMO
+BCBS,Blue Cross and Blue Shield of New Mexico,HMO,BCBS NM HMO
+BCBS,Blue Cross and Blue Shield of New Mexico,Other,BCBS NM Participating Plan
+BCBS,Blue Cross and Blue Shield of New Mexico,PPO,BCBS NM Blue Preferred Plus
+BCBS,Blue Cross and Blue Shield of New Mexico,PPO,BCBS NM PPO
+BCBS,Blue Cross and Blue Shield of North Carolina,EPO,BCBS NC Blue Atrium High Performance
+BCBS,Blue Cross and Blue Shield of North Carolina,EPO,BCBS NC Blue Duke Health High Performance
+BCBS,Blue Cross and Blue Shield of North Carolina,EPO,BCBS NC Blue Hickory High Performance
+BCBS,Blue Cross and Blue Shield of North Carolina,EPO,BCBS NC Blue Home Premier
+BCBS,Blue Cross and Blue Shield of North Carolina,EPO,BCBS NC Blue WFBH High Performance
+BCBS,Blue Cross and Blue Shield of North Carolina,PPO,BCBS NC Preferred Provider
+BCBS,Blue Cross and Blue Shield of Oklahoma,PPO,BCBS OK Advantage PPO
+BCBS,Blue Cross and Blue Shield of Oklahoma,PPO,BCBS OK Choice PPO
+BCBS,Blue Cross and Blue Shield of Oklahoma,PPO,BCBS OK Option PPO
+BCBS,Blue Cross and Blue Shield of Oklahoma,PPO,BCBS OK Preferred PPO
+BCBS,Blue Cross and Blue Shield of Rhode Island,PPO,BCBS RI Blue CHiP
+BCBS,Blue Cross and Blue Shield of South Carolina,PPO,BCBS SC Blue Advantage
+BCBS,Blue Cross and Blue Shield of South Carolina,PPO,BCBS SC Preferred Blue
+BCBS,Blue Cross and Blue Shield of Texas,EPO,BCBS TX Blue Essential
+BCBS,Blue Cross and Blue Shield of Texas,HMO,BCBS TX Advantage HMO
+BCBS,Blue Cross and Blue Shield of Texas,PPO,BCBS TX Blue Choice PPO
+BCBS,Blue Cross and Blue Shield of Vermont,PPO,BCBS VT Vermont Freedom PPO
+BCBS,Blue Cross of Idaho,POS,BC ID Blue Value POS
+BCBS,Blue Cross of Idaho,PPO,BC ID Preferred Blue PPO
+BCBS,Blue Shield of California,HMO,BS CA Local
+BCBS,Blue Shield of California,PPO,BS CA Local
+BCBS,Capital Blue,Other,Capital Blue Network 1
+BCBS,Capital Blue,Other,Capital Blue Network 2
+BCBS,CareFirst,PPO,CareFirst Traditional Indemnity
+BCBS,Excellus BlueCross BlueShield,HMO,Excellus BCBS Blue Choice HMO
+BCBS,Excellus BlueCross BlueShield,PPO,Excellus BCBS Blue PPO Signature
+BCBS,FloridaBlue,HMO,FloridaBlue Blue Care
+BCBS,FloridaBlue,PPO,FloridaBlue Blue Choice
+BCBS,FloridaBlue,PPO,FloridaBlue Blue Options
+BCBS,Highmark Blue Cross Blue Shield Delaware,Other,Highmark BCBS DE Blue Local
+BCBS,Highmark Blue Cross Blue Shield New York,Other,Highmark BCBS NY
+BCBS,Highmark Blue Cross Blue Shield Pennsylvania,Other,Highmark BCBS PA
+BCBS,Highmark Blue Cross Blue Shield West Virginia,PPO,Highmark BCBS VA PPO Blue
+BCBS,Horizon Blue Cross and Blue Shield of New Jersey,EPO,Horizon BCBS NJ Advantage EPO High Performance
+BCBS,Horizon Blue Cross and Blue Shield of New Jersey,EPO,Horizon BCBS NJ Advantage Omnia EPO
+BCBS,Horizon Blue Cross and Blue Shield of New Jersey,EPO,Horizon BCBS NJ EPO
+BCBS,Horizon Blue Cross and Blue Shield of New Jersey,Other,Horizon BCBS NJ Direct Access Omnia
+BCBS,Horizon Blue Cross and Blue Shield of New Jersey,PPO,Horizon BCBS NJ PPO
+BCBS,Independence Blue Cross,Other,IBC PA Independence Assurance Company
+BCBS,Premera Blue Cross of Alaska,Other,Premera BC AK Global
+BCBS,Premera Blue Cross of Alaska,Other,Premera BC AK Heritage
+BCBS,Premera Blue Cross of Washington,HMO,Premera BC WA Sherwood HMO
+BCBS,Premera Blue Cross of Washington,Other,Premera BC WA Heritage
+BCBS,Premera Blue Cross of Washington,Other,Premera BC WA Heritage Prime
+BCBS,Premera Blue Cross of Washington,Other,Premera BC WA Heritage Signature
+BCBS,Premera Blue Cross of Washington,Other,Premera BC WA Participating Provider
+BCBS,Regence BlueCross BlueShield of Oregon,HMO,Regence BCBS OR High Performance
+BCBS,Regence BlueCross BlueShield of Oregon,HMO,Regence BCBS OR Legacy Health Plan
+BCBS,Regence BlueCross BlueShield of Oregon,PPO,Regence BCBS OR Participating Provider
+BCBS,Regence BlueCross BlueShield of Oregon,PPO,Regence BCBS OR Preferred
+BCBS,Regence BlueCross BlueShield of Utah,HMO,Regence BCBS UT Focal Point
+BCBS,Regence BlueCross BlueShield of Utah,HMO,Regence BCBS UT High Performance
+BCBS,Regence BlueCross BlueShield of Utah,HMO,Regence BCBS UT Value Care
+BCBS,Regence BlueCross BlueShield of Utah,PPO,Regence BCBS UT Participating Provider
+BCBS,Regence BlueCross BlueShield of Utah,PPO,Regence BCBS UT Preferred Blue Option
+BCBS,Regence BlueCross BlueShield of Utah,PPO,Regence BCBS UT Value Care
+BCBS,Regence BlueShield Washington,HMO,Regence BS WA Accountable Health Networks
+BCBS,Regence BlueShield Washington,HMO,Regence BS WA Eastside Health Network
+BCBS,Regence BlueShield Washington,HMO,Regence BS WA High Performance
+BCBS,Regence BlueShield Washington,HMO,Regence BS WA Multicare
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA Connect IHS
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA Multicare
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA Participating Provider
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA Preferred
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA Uniform Medical Plan
+BCBS,Regence BlueShield Washington,PPO,Regence BS WA University of Washington
+BCBS,Regence BlueShield of Idaho,HMO,Regence BS ID Accord
+BCBS,Regence BlueShield of Idaho,PPO,Regence BS ID Accord
+BCBS,Regence BlueShield of Idaho,PPO,Regence BS ID Preferred
+BCBS,Wellmark Blue Cross and Blue Shield Iowa,PPO,Wellmark BCBS IA Alliance Select
+BCBS,Wellmark Blue Cross and Blue Shield Iowa,PPO,Wellmark BCBS IA Participating Providers
+BCBS,Wellmark Blue Cross and Blue Shield South Dakota,PPO,Wellmark BCBS SD Blue Select
+Cigna,Cigna Health Life Insurance Company,OAP,Cigna National OAP
+Cigna,Cigna Health Life Insurance Company,OAP,Cigna OAP Shared Admin Repricing
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Health Care Alliance of the Front Range
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Healthpartners Qualified
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Localplus
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Localplus with EBH Plus Pathwell
+Cigna,Cigna Health Life Insurance Company,Other,Cigna MVP Mohawk Valley Physicians
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Priority Health Alliance
+Cigna,Cigna Health Life Insurance Company,Other,Cigna Surefit
+Cigna,Cigna Health Life Insurance Company,PPO,Cigna National PPO
+Cigna,Cigna Health Life Insurance Company,PPO,Cigna National PPO SAR I
+Cigna,Cigna Health Life Insurance Company,PPO,Cigna National PPO SAR II
+DeanHealthPlan,DEAN HEALTH PLAN,HMO,Dean Commercial
+DeanHealthPlan,DEAN HEALTH PLAN,HMO,Dean Medica West and Mayo Clinic Health System
+DeanHealthPlan,Dean Self Insured,PPO,Dean ASO
+EmblemHealth,EmblemHealth,EPO,EmblemHealth GHI
+EmblemHealth,EmblemHealth,EPO,EmblemHealth HIP
+EmblemHealth,EmblemHealth,HMO,EmblemHealth ConnectiCare
+EmblemHealth,EmblemHealth,HMO,EmblemHealth HIP
+EmblemHealth,EmblemHealth,POS,EmblemHealth ConnectiCare
+EmblemHealth,EmblemHealth,POS,EmblemHealth HIP
+EmblemHealth,EmblemHealth,PPO,EmblemHealth ConnectiCare
+EmblemHealth,EmblemHealth,PPO,EmblemHealth GHI
+EmblemHealth,EmblemHealth,PPO,EmblemHealth HIP
+EmblemHealth,First Health,EPO,EmblemHealth FirstHealth
+EmblemHealth,First Health,HMO,EmblemHealth FirstHealth
+EmblemHealth,First Health,POS,EmblemHealth FirstHealth
+EmblemHealth,First Health,PPO,EmblemHealth FirstHealth
+EncoreHealthNetwork,Encore Health Network,EPO,Encore Prime
+EncoreHealthNetwork,Encore Health Network,PPO,Encore Combined
+EncoreHealthNetwork,Encore Health Network,PPO,Encore Health PPO
+FirstChoice,First Choice Health,PPO,First Choice Health
+FirstHealth,First Health,Other,First Health Network 1
+FirstHealth,First Health,Other,First Health Network 2
+Geisinger,GIIC TPA,HMO,Geisinger Indemnity Insurance Company TPA
+Geisinger,GIIC TPA,PPO,Geisinger Indemnity Insurance Company TPA
+Geisinger,GQO PPO,PPO,Geisinger Quality Options PPO
+HealthAllianceMichigan,Health Alliance Plan,HMO,Health Alliance Plan Genesys Choice
+HealthAllianceMichigan,Health Alliance Plan,HMO,Health Alliance Plan HMO
+HealthAllianceMichigan,Health Alliance Plan,HMO,Health Alliance Plan Henry Ford Choice
+HealthAllianceMichigan,Health Alliance Plan,HMO,Health Alliance Plan Pivotal
+HealthAllianceMichigan,Health Alliance Plan,PPO,Health Alliance Plan PPO
+HealthLink,HealthLink,HMO,HealthLink Open Access III
+HealthLink,HealthLink,PPO,HealthLink Open Access III
+HealthPartners,HealthPartners,PPO,HealthPartners Achieve SE
+HealthPartners,HealthPartners,PPO,HealthPartners Cornerstone
+HealthPartners,HealthPartners,PPO,HealthPartners Open Access
+HealthPartners,HealthPartners,PPO,HealthPartners Select
+HealthSmart,HealthSmart Benefit Solutions Inc,Other,HealthSmart
+HealthSmart,HealthSmart Benefit Solutions Inc,PPO,HealthSmart
+IndependentHealth,Independent Health Association,HMO,Independent Health HMO
+IndependentHealth,Independent Health Benefits Corporation,EPO,Independent Health EPO
+IndependentHealth,Independent Health Benefits Corporation,POS,Independent Health EPO
+IndependentHealth,Independent Health Benefits Corporation,PPO,Independent Health EPO
+IndependentHealth,Independent Health Corporation,Other,Independent Health Self Funded
+Kaiser,Kaiser Foundation Health Plan of Colorado,HMO,KFHP Select CO HMO
+Kaiser,Kaiser Foundation Health Plan of Washington,HMO,KFHP WA HMO
+Kaiser,Kaiser Foundation Health Plan of Washington Options Inc,PPO,KFHP Access WA PPO
+Kaiser,Kaiser Foundation Health Plan of the MidAtlantic States Inc,HMO,KFHP Mid-Atlantic HMO
+Kaiser,Kaiser Foundation Health Plan of the Northern California Region,HMO,KFHP North CA HMO
+Kaiser,Kaiser Foundation Health Plan of the Southern California Region,HMO,KFHP South CA HMO
+Kaiser,Kaiser Permanente Insurance Company,PPO,KPIC CO PPO
+Kaiser,Kaiser Permanente Insurance Company,PPO,KPIC South CA PPO
+MMO,Medical Mutual Of Ohio,HMO,MMO Cle Care
+MMO,Medical Mutual Of Ohio,HMO,MMO Market HMO
+MMO,Medical Mutual Of Ohio,HMO,MMO Medflex HMO
+MMO,Medical Mutual Of Ohio,HMO,MMO SuperMed HMO
+MMO,Medical Mutual Of Ohio,Other,MMO Traditional
+MMO,Medical Mutual Of Ohio,PPO,MMO SuperMed Network Access
+MMO,Medical Mutual Of Ohio,PPO,MMO SuperMed Optum
+MMO,Medical Mutual Of Ohio,PPO,MMO SuperMed Plus
+MVPHealthPlan,MVP Health Care Inc,EPO,MVP EPO/PPO/HMO/POS
+MVPHealthPlan,MVP Health Care Inc,HMO,MVP EPO/PPO/HMO/POS
+MVPHealthPlan,MVP Health Care Inc,HMO,MVP Essential Plans
+MVPHealthPlan,MVP Health Care Inc,HMO,MVP Premier and Secure
+MVPHealthPlan,MVP Health Care Inc,POS,MVP EPO/PPO/HMO/POS
+MVPHealthPlan,MVP Health Care Inc,PPO,MVP EPO/PPO/HMO/POS
+MassGeneralBrighamHealthPlan,Mass General Brigham Health Plan,HMO,MGBHP HMO
+MassGeneralBrighamHealthPlan,Mass General Brigham Health Plan,PPO,MGBHP PPO
+Medcost,MedCost,Other,Medcost Brevard College
+Medcost,MedCost,PPO,MedCost Preferred
+Medcost,MedCost,PPO,Medcost 4MOST Health Network
+Medcost,MedCost,PPO,Medcost First Health
+Medcost,MedCost,PPO,Medcost MUSC Physician Health Plan Provider
+Medcost,MedCost,PPO,Medcost Magna Care PPO
+Medcost,MedCost,PPO,Medcost VHN Plus
+Medcost,MedCost,PPO,Medcost VHN Ultra
+Medica,MMSI dba Medica Health Plan Solutions,EPO,Medica Mayo Medical
+Medica,MMSI dba Medica Health Plan Solutions,PPO,Medica Health Plan Solutions
+Medica,Medica Insurance Company,HMO,Medica CHI Health
+Medica,Medica Insurance Company,HMO,Medica Essentials
+Medica,Medica Insurance Company,HMO,Medica Focus
+Medica,Medica Insurance Company,PPO,Medica CHI Health
+Medica,Medica Insurance Company,PPO,Medica Choice Passport With UHC Choice Plus
+Medica,Medica Insurance Company,PPO,Medica Choice Passport With UHC Options PPO
+MidlandsChoice,Midlands Choice,PPO,Midlands Avera TotalChoice
+MidlandsChoice,Midlands Choice,PPO,Midlands Choice with Mayo
+MidlandsChoice,Midlands Choice,PPO,Midlands HealthPartners
+MidlandsChoice,Midlands Choice,PPO,Midlands Medica Insure
+MidlandsChoice,Midlands Choice,PPO,Midlands Oscar Health
+MidlandsChoice,Midlands Choice,PPO,Midlands Oscar Health Iowa
+ModaHealth,Moda,EPO,ModaHealth Affinity
+ModaHealth,Moda,EPO,ModaHealth Synergy
+ModaHealth,Moda,PPO,ModaHealth Connexus
+ModaHealth,Moda,PPO,ModaHealth ModaSelect
+OhioPPOConnect,Ohio Health Choice,PPO,Ohio Health Choice
+OhioPPOConnect,Ohio PPO Connect,PPO,Ohio State University
+OhioPPOConnect,Quality Care Partners,PPO,Quality Care Partners
+Oscar,Oscar,EPO,Oscar
+Oscar,Oscar,HMO,Oscar
+Point32,Harvard Pilgrim Health Care,HMO,HPHC Standard
+Point32,Harvard Pilgrim Health Care,POS,HPHC Standard
+Point32,Harvard Pilgrim Health Care,PPO,HPHC Standard
+PriorityHealth,Priority Health,HMO,Priority Health HMO
+PriorityHealth,Priority Health,PPO,Priority Health PPO
+ProviDrs,ProviDRs Care,PPO,ProviDRs Care Network - PCN10
+ProvidenceHealthPlan,Providence Health Plan,PPO,Choice Network
+ProvidenceHealthPlan,Providence Health Plan,PPO,Connect Network
+ProvidenceHealthPlan,Providence Health Plan,PPO,Providence Extend PPO Network
+ProvidenceHealthPlan,Providence Health Plan,PPO,Signature Network
+Quartz,Quartz Health Solutions Inc,HMO,Quartz Beloit One
+Quartz,Quartz Health Solutions Inc,HMO,Quartz Central
+Quartz,Quartz Health Solutions Inc,HMO,Quartz Gundersen Performance
+Quartz,Quartz Health Solutions Inc,HMO,Quartz One
+Quartz,Quartz Health Solutions Inc,HMO,Quartz Select
+Quartz,Quartz Health Solutions Inc,HMO,Quartz Tiered Choice Plus
+Quartz,Quartz Health Solutions Inc,HMO,Quartz UW Health
+Quartz,Quartz Health Solutions Inc,HMO,Quartz West
+Quartz,Quartz Health Solutions Inc,Other,Quartz Performance Plus
+Quartz,Quartz Health Solutions Inc,PPO,Quartz HealthEOS
+SagamoreHealthNetwork,Sagamore Health Network,PPO,SagamoreHealth
+SelectHealth,Select Health,HMO,SelectHealth Med
+SelectHealth,Select Health,HMO,SelectHealth Value
+SelectHealth,Select Health,Other,SelectHealth Value
+SelectHealth,Select Health,POS,SelectHealth Care
+SelectHealth,Select Health,POS,SelectHealth Med
+SelectHealth,Select Health,POS,SelectHealth Value
+SelectHealth,Select Health,PPO,SelectHealth Care
+SelectHealth,Select Health,PPO,SelectHealth Med
+SentaraHealthPlans,Merative on behalf of Sentara,HMO,Sentara Health Plans
+SentaraHealthPlans,Merative on behalf of Sentara,Other,Sentara Health Plans
+SummaCare,Summa Insurance Company,EPO,SummaCare
+SummaCare,Summa Insurance Company,HMO,SummaCare
+SummaCare,Summa Insurance Company,PPO,SummaCare
+TheHealthPlan,The Health Plan Of WV,Other,The Health Plan Network
+Trustmark,Trustmark Small Business Benefits,Other,Trustmark - Small Business Benefit
+Tufts,Tufts Health Public Plans Inc,HMO,Tufts Health Direct
+UHC,Medica Self Insured,PPO,Medica Options PPO
+UHC,Oxford Health Plans,POS,Oxford Choice Plus POS
+UHC,Oxford Health Plans,POS,Oxford Core POS
+UHC,Surest,PPO,Surest Choice Plus
+UHC,UMR,PPO,UMR Choice Plus
+UHC,UMR,PPO,UMR Choice Plus Premium Designation
+UHC,UMR,PPO,UMR Choice Plus with CRS Enhanced Network
+UHC,UMR,PPO,UMR Options PPO
+UHC,UMR,PPO,UMR Select Plus
+UHC,United HealthCare Services,EPO,UHC Choice EPO
+UHC,United HealthCare Services,EPO,UHC Navigate EPO
+UHC,United HealthCare Services,POS,UHC Choice Plus POS
+UHC,United HealthCare Services,POS,UHC Core POS
+UPMC,UPMC Health Plan,EPO,UPMC Health Plan Partner
+UPMC,UPMC Health Plan,EPO,UPMC Health Plan Premium
+UPMC,UPMC Health Plan,EPO,UPMC Health Plan Select
+UPMC,UPMC Health Plan,HMO,UPMC Health Plan Standard
+UPMC,UPMC Health Plan,POS,UPMC Health Plan Standard
+UPMC,UPMC Health Plan,PPO,UPMC Health Plan Premium

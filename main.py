@@ -6,6 +6,8 @@ from typing import Callable, Dict, List
 
 from carrier_report import generate_carrier_report
 from network_report import generate_network_report
+from product_report import generate_product_report
+from reporting_entity_report import generate_reporting_entity_report
 from report_utils import DEFAULT_LOG_FILE, get_config_path, send_email
 
 
@@ -32,9 +34,14 @@ def run_selected_reports(config: Dict, env: str) -> List[str]:
     registry: Dict[str, Callable[[Dict, str], str]] = {
         "network": generate_network_report,
         "carrier": generate_carrier_report,
+        "reporting_entity": generate_reporting_entity_report,
+        "product": generate_product_report,
     }
 
-    reports_to_generate = config.get("reports_to_generate", ["network", "carrier"])
+    reports_to_generate = config.get(
+        "reports_to_generate",
+        ["network", "carrier", "reporting_entity", "product"],
+    )
     if not isinstance(reports_to_generate, list) or not reports_to_generate:
         raise ValueError("config.json reports_to_generate must be a non-empty list")
 
